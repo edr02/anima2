@@ -1,13 +1,229 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:400");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
 }
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.desktop-1 {
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 3px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  margin-top: -14px;
+  min-height: 537px;
+  width: 1472px;
+}
+
+.overlap-group {
+  align-items: center;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  min-height: 124px;
+  padding: 0 10px;
+  width: 1472px;
+}
+
+.flex-row {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 7.0px;
+  margin-top: 46px;
+  min-width: 1369px;
+  position: relative;
+}
+
+.rsp-logo-1 {
+  height: 51px;
+  object-fit: cover;
+  width: 253px;
+}
+
+.line-1 {
+  height: 5px;
+  margin-right: 12.0px;
+  margin-top: 22px;
+  object-fit: cover;
+  width: 1440px;
+}
+
+.sfondo_schermata_passerelle-container {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 38px;
+  margin-top: 47px;
+  min-width: 1000px;
+}
+
+.sfondo_schermata_passerelle-1 {
+  display: block;
+  height: 337px;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.1);
+  width: 210px;
+}
+
+.sfondo_schermata_passerelle-1.animate-enter {
+  animation: animate-enter-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.sfondo_schermata_passerelle-2,
+.sfondo_schermata_passerelle-3 {
+  display: block;
+  height: 337px;
+  margin-left: 185px;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.1);
+  width: 210px;
+}
+
+.sfondo_schermata_passerelle-2.animate-enter1 {
+  animation: animate-enter1-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.sfondo_schermata_passerelle-3.animate-enter2 {
+  animation: animate-enter2-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.title {
+  letter-spacing: 0;
+  margin-left: 74px;
+  min-height: 29px;
+}
+
+.flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 368px;
+  margin-left: 38px;
+  margin-top: 45px;
+  min-width: 990px;
+}
+
+.plancett-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 368px;
+  width: 210px;
+}
+
+.sfondo_schermata_plancette-1 {
+  cursor: pointer;
+  height: 337px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+  width: 210px;
+}
+
+.sfondo_schermata_plancette-1:hover,
+.sfondo_schermata_plancette-3:hover,
+.sfondo_schermata_plancette-2:hover {
+  transform: scale(1.1);
+}
+
+.plancetta {
+  letter-spacing: 0;
+  margin-right: 41.0px;
+  margin-top: 2px;
+  min-height: 29px;
+  min-width: 107px;
+}
+
+.sfondo_schermata_plancette-3 {
+  cursor: pointer;
+  height: 337px;
+  margin-left: 175px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+  width: 210px;
+}
+
+.sfondo_schermata_plancette-2 {
+  cursor: pointer;
+  height: 337px;
+  margin-left: 185px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+  width: 210px;
+}
+
+@keyframes animate-enter2-frames {
+  from{opacity: 0;
+transform: scale(1.1);
+}
+to{opacity: 1;
+transform: scale(1);
+}
+}
+
+@keyframes animate-enter1-frames {
+  from{opacity: 0;
+transform: scale(1.1);
+}
+to{opacity: 1;
+transform: scale(1);
+}
+}
+
+@keyframes animate-enter-frames {
+  from{opacity: 0;
+transform: scale(1.1);
+}
+to{opacity: 1;
+transform: scale(1);
+}
+}
+
+.text-input {
+  height: 51px;
+  margin-left: 793px;
+}
+
+.text-input {
+  font-family: "-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue","Arial","sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
